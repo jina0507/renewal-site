@@ -4,10 +4,31 @@
 }
 ul,ol{list-style: none;}
 a{text-decoration: none; color:inherit;}
+html{scroll-behavior: smooth;}
 body{
   background-color:#f5f5f6;
   user-select: none;
   -webkit-user-select: none;
+  scroll-behavior: smooth;
+}
+/*topbutton*/
+.fixbtn{
+  position:fixed;
+  bottom:30px;
+  right:100px;
+  z-index:1;
+  border:none;
+  outline:none;
+  background-color:skyblue;
+  color:#fff;
+  cursor: pointer;
+  padding:20px;
+  border-radius: 10px;
+  display:none;/*버튼을 화면에서 제거*/
+  font-size:20px;
+}
+button:hover{
+  background-color:#ccc;
 }
 /*header*/
 header{
